@@ -1,0 +1,103 @@
+% mn2esample.tex
+%
+% v2.1 released 22nd May 2002 (G. Hutton)
+%
+%
+% Previous versions of this sample document were
+% compatible with the LaTeX 2.09 style file mn.sty
+% v1.2 released 5th September 1994 (M. Reed)
+% v1.1 released 18th July 1994
+% v1.0 released 28th January 1994
+
+\documentclass[useAMS,usenatbib]{mn2e}
+\usepackage{graphicx}
+%\usepackage{aas_macros}
+\usepackage{multirow}
+\usepackage{hyperref}
+
+
+% If your system does not have the AMS fonts version 2.0 installed, then
+% remove the useAMS option.
+%
+% useAMS allows you to obtain upright Greek characters.
+% e.g. \umu, \upi etc.  See the section on "Upright Greek characters" in
+% this guide for further information.
+%
+% If you are using AMS 2.0 fonts, bold math letters/symbols are available
+% at a larger range of sizes for NFSS release 1 and 2 (using \boldmath or
+% preferably \bmath).
+%
+% The usenatbib command allows the use of Patrick Daly's natbib.sty for
+% cross-referencing.
+%
+% If you wish to typeset the paper in Times font (if you do not have the
+% PostScript Type 1 Computer Modern fonts you will need to do this to get
+% smoother fonts in a PDF file) then uncomment the next line
+% \usepackage{Times}
+
+%%%%% AUTHORS - PLACE YOUR OWN MACROS HERE %%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title[Imagecube]{Imagecube: LONG TITLE}
+\author[Lianou, Barmby, Taylor]
+{
+S. Lianou$^{1,2}$,
+P. Barmby$^{2}$
+J.C. Taylor$^{2,3}$\\
+%$^{1}$address 1
+$^{2}$Department of Physics and Astronomy, University of Western Ontario, London, ON, N6A 3K7, Canada\\
+%$^{3}$address 3
+}
+
+\begin{document}
+
+\date{}
+
+%\pagerange{\pageref{firstpage}--\pageref{lastpage}} \pubyear{2002}
+
+\maketitle
+
+\label{firstpage}
+
+\begin{abstract}
+\input{imagecube_abs}
+\end{abstract}
+
+\begin{keywords}
+techniques: image processing, methods: numerical
+\end{keywords}
+
+\section{Introduction}
+\input{imagecube_intro}
+
+\section{Software Design}
+\input{imagecube_design}
+
+\section{Usage Example}
+\input{imagecube_example}
+
+\section{Release and Future plans}
+\input{imagecube_release}
+
+\section{Summary}
+\input{imagecube_summary}
+
+
+\section*{Acknowledgments}
+
+go here.
+
+\bibliographystyle{mn2e}
+\bibliography{imagecube_refs}{}
+
+\bsp
+
+
+\appendix
+
+\label{lastpage}
+
+\end{document}
+
